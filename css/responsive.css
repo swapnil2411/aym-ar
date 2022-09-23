@@ -1,0 +1,23 @@
+@media (max-width: 991px){
+    .principle_column{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px){
+    .vision_principle_area{
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width: 600px){
+    .vision_principle_area{
+        padding: 50px 20px;
+    }
+
+    .principle_column{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
