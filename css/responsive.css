@@ -3,21 +3,295 @@
         flex: 0 0 50%;
         max-width: 50%;
     }
+
+    .scaling_up_area{
+        height: 650px;
+    }
+
+    .continue_growth_area{
+        flex-wrap: wrap;
+    }
+
+    .continue_growth_area .left_area, .continue_growth_area .right_area{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .number_define h3{
+        text-align: center;
+    }
+
+    .company_numbers{
+        -webkit-justify-content: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+
+    .company_numbers .number_box{
+        margin: 10px;
+    }
+
+    .review_area .review_box{
+        flex: 48%;
+        max-width: 48%;
+    }
+
+    .capabilities_area .capability_box .capability_name h2{
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 767px){
-    .vision_principle_area{
+
+    .sec_title h2{
+        font-size: 28px;
+    }
+
+    .sec_para p{
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .vision_principle_area,
+    .section-three,
+    .section-four,
+    .section-five,
+    .section-six,
+    .section-seven,
+    .section-nine{
         padding: 50px 30px;
+    }
+
+    .cover_page{
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .cover_page .left_area{
+        height: 650px;
+    }
+
+    .cover_page .left_area, .cover_page .right_area{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .cover_page .right_area{
+        padding: 40px 0;
+    }
+
+    .scaling_up_area{
+        flex-wrap: wrap;
+        height: 100%;
+        
+    }
+
+    .scaling_content{
+        padding: 50px 20px 100px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 600px;
+        -webkit-justify-content: flex-start;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+    }
+
+    .mobile-btn{
+        display: block;
+        background: #d11c26;
+        color: #fff;
+        margin-top: 20px;
+    }
+
+    .scaling_btn{
+        display: none;
+    }
+
+    .number_define h3{
+        font-size: 20px;
+    }
+
+    .core_values_area .value_box{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .core_values_area{
+        flex-wrap: wrap;
+    }
+
+    .mobile-div{
+        display: block;
+    }
+
+    .desktop-div{
+        display: none;
+    }
+
+    .creating_value_area{
+        flex-wrap: wrap;
+    }
+
+    .creating_value_area .creating_box{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .section-eight .left_area{
+        padding: 50px 30px;
+    }
+
+    .section-eight{
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .section-eight .left_area,
+    .section-eight .right_area{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .section-eight .right_area{
+        height: 500px;
+        overflow-y: hidden;
+    }
+
+    .download_link_area{
+        flex-wrap: wrap;
+    }
+
+    .download_link_area .left_area, .download_link_area .right_area{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .download_link_area .left_area{
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .download_link_area .right_area{
+        border: none;
+    }
+
+    .download_link_area .right_area h2{
+        font-size: 24px;
     }
 }
 
 @media (max-width: 600px){
-    .vision_principle_area{
+    .sec_title h2{
+        line-height: 35px;
+    }
+    .vision_principle_area,
+    .section-three,
+    .section-four,
+    .section-five,
+    .section-six,
+    .section-seven,
+    .section-eight .left_area,
+    .section-nine{
         padding: 50px 20px;
     }
 
     .principle_column{
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .scaling_content{
+        height: unset;
+    }
+
+    .md_message{
+        flex-direction: column;
+        padding: 25px 0;
+        -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    }
+
+    .message_content p{
+        text-align: justify;
+    }
+
+    .continue_growth_area .right_area,
+    .continue_growth_area .left_area{
+        padding: 10px 0;
+    }
+
+    .continue_growth_area .right_area{
+        margin-top: 30px;
+    }
+
+
+    .company_numbers{
+        flex-direction: column;
+    }
+
+    .company_numbers .number_box{
+        flex-basis: unset;
+        max-width: unset;
+        width: 170px;
+        height: 170px;
+    }
+
+    .readmore{
+        font-size: 14px;
+        width: 100%;
+        padding: 15px 0;
+        font-weight: 500;
+    }
+
+    .right_area .readmore{
+        width: 100%;
+    }
+
+    .core_values_area .value_box .value_content .value_text p:nth-child(1){
+        font-size: 18px;
+    }
+
+    .section-four .right_area .title::after, .section-four .right_area .title::before{
+        width: 50px;
+    }
+
+    .section-four .right_area .title::before{
+        left: -55px;
+    }
+
+    .section-four .right_area .title::after{
+        right: -55px;
+    }
+
+    .review_area .review_box{
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .capabilities_area{
+        flex-wrap: wrap;
+    }
+
+    .capabilities_area .capability_box{
+        flex: 0 0 48%;
+        max-width: 48%;
+        margin-bottom: 25px;
+    }
+
+    .navbar_title h2{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px){
+    .capabilities_area .capability_box{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .navbar_title h2{
+        font-size: 16px;
     }
 }

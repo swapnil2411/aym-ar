@@ -9,5 +9,13 @@ $(document).ready(function(){
         $('aside').removeClass('show_sidebar');
         $('.hamburger').css('visibility','visible')
     })
-    
+
+    new WOW().init();
+
+    $('.count-up').counterUp({
+        delay: 50,
+        time: 5000
+    })
+      
 })
+
