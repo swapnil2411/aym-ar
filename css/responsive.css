@@ -344,7 +344,7 @@
         max-width: 100%;
     }
 
-    .content_box_2 .right_message{
+    .content_box_1 .right_message, .content_box_2 .right_message{
         padding-left: 0;
     }
 }
