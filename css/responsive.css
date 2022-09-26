@@ -1,3 +1,38 @@
+@media (max-width: 1199px){
+    .creating_value_table{
+        overflow-x: auto;
+    }
+
+    .creating_value_table::-webkit-scrollbar{
+        height: 5px;
+    }
+
+    .angle_icon{
+        left: 0;
+    }
+
+    .angle_icon.right_icon {
+        right: 0px;
+        left: unset;
+    }
+
+    .our_community_area .community_flex .community_box .txt{
+        height: 100%;
+    }
+
+    .four_s_box .left_box{
+        flex: 0 0 35%;
+        max-width: 35%;
+    }
+    
+    .four_s_box .right_box{
+        flex: 0 0 62%;
+        max-width: 62%;
+        background: #f8f8f8;
+        padding: 25px 40px;
+    }
+}
+
 @media (max-width: 991px){
     .principle_column{
         flex: 0 0 50%;
@@ -39,6 +74,11 @@
     .capabilities_area .capability_box .capability_name h2{
         font-size: 24px;
     }
+
+    .empowering_people_area .employee_engagement .empower_flex .empower_box{
+        flex: 0 0 47%;
+        max-width: 47%;
+    }
 }
 
 @media (max-width: 767px){
@@ -47,9 +87,24 @@
         font-size: 28px;
     }
 
-    .sec_para p{
+    .sec_para p,
+    .initiative_box .txt p,
+    .empowering_people_area .empower_sec p,
+    .our_community_area .community_flex .community_box .txt p,
+    .four_s_box .right_box p,
+    .capital_flex .cap_box .left_cap_box p,
+    .capital_flex .cap_box .right_cap_box p,
+    .net_zero_flex .right_area ul li,
+    .strategy_flex .strategy_box p{
         font-size: 15px;
         font-weight: 500;
+    }
+
+    .four_s_box .right_box h3,
+    .capital_flex .cap_box .right_cap_box h2,
+    .capital_flex .cap_box .left_cap_box h2,
+    .strategy_flex .strategy_box h2{
+        font-size: 24px;
     }
 
     .vision_principle_area,
@@ -58,7 +113,15 @@
     .section-five,
     .section-six,
     .section-seven,
-    .section-nine{
+    .section-nine,
+    .creating_value_every_area,
+    .digital_capability_area,
+    .empowering_people_area,
+    .empowering_people_area,
+    .our_community_area,
+    .capital_commitment_area,
+    .netzero_commitment_area,
+    .strategic_goals_area{
         padding: 50px 30px;
     }
 
@@ -179,6 +242,58 @@
     .download_link_area .right_area h2{
         font-size: 24px;
     }
+
+    .initiative_box .txt p{
+        text-align: left;
+    }
+
+    .initiative_box .txt p br{
+        display: none;
+    }
+
+    .empowering_people_area .empower_sec h2{
+        font-size: 22px;
+    }
+
+    .empowering_people_area .empower_sec .empower_flex .empower_box{
+        flex: 0 0 48%;
+        max-width: 48%;
+        margin-bottom: 30px;
+    }
+
+    .our_community_area .community_flex .community_box{
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+
+    .four_s_box .left_box,
+    .four_s_box .right_box{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .four_s_box .left_box img{
+        max-width: 100%;
+        width: unset;
+        height: unset;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .net_zero_flex .right_area h3{
+        font-size: 20px;
+    }
+
+    .net_zero_flex .left_area,
+    .net_zero_flex .right_area{
+        flex: 0 0 100%;
+        max-width: 100%; 
+    }
+
+    .net_zero_flex .left_area{
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 600px){
@@ -192,7 +307,15 @@
     .section-six,
     .section-seven,
     .section-eight .left_area,
-    .section-nine{
+    .section-nine,
+    .creating_value_every_area,
+    .digital_capability_area,
+    .empowering_people_area,
+    .empowering_people_area,
+    .our_community_area,
+    .capital_commitment_area,
+    .netzero_commitment_area,
+    .strategic_goals_area{
         padding: 50px 20px;
     }
 
@@ -283,6 +406,64 @@
     .navbar_title h2{
         font-size: 18px;
     }
+
+    .initiative_box{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #digital_capability .bg-img,
+    #empowering_people .bg-img,
+    #our_community .bg-img,
+    #capital_commitment .bg-img,
+    #netzero_commitment .bg-img,
+    #strategic_goals .bg-img{
+        bottom: -250px;
+    }
+
+    .empowering_people_area .empower_sec h2{
+        font-size: 18px;
+    }
+
+    .empowering_people_area .empower_sec .empower_flex .empower_box,
+    .empowering_people_area .empower_sec .empower_flex .empower_box{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .our_community_area .community_flex .community_box{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #our_community .bg-img{
+        background-position: center;
+    }
+
+    .capital_flex .cap_box .left_cap_box,
+    .capital_flex .cap_box .right_cap_box{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .capital_flex .cap_box .right_cap_box{
+        margin-top: 15px;
+    }
+
+    .capital_flex .cap_box{
+        margin-bottom: 0;
+        padding: 20px 0;
+    }
+
+    .capital_flex .cap_box:not(:last-child){
+        margin-bottom: 0;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .strategy_flex .strategy_box{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 480px){
@@ -293,5 +474,22 @@
 
     .navbar_title h2{
         font-size: 16px;
+    }
+
+    #digital_capability .bg-img,
+    #empowering_people .bg-img,
+    #our_community .bg-img,
+    #capital_commitment .bg-img,
+    #netzero_commitment .bg-img,
+    #strategic_goals .bg-img{
+        bottom: -150px;
+    }
+
+    .operation_table::-webkit-scrollbar{
+        height: 5px;
+    }
+
+    .operation_table .table{
+        width: 100%;
     }
 }
