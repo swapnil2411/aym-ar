@@ -2122,6 +2122,7 @@ aside.show_sidebar{
     -webkit-justify-content: space-between;
     -webkit-box-pack: justify;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .content_box_1 .left_message,
@@ -2271,6 +2272,7 @@ aside.show_sidebar{
     transform: translateY(-100%);
     transition: 0.5s ease-in-out all;
     z-index: 3;
+    overflow-y: auto;
 }
 
 .top_leadership_area .team_member_column:hover .member_desription{
@@ -2537,6 +2539,18 @@ aside.show_sidebar{
     padding: 70px 50px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+#create_value{
+    position: relative;
+}
+
+#create_value .bg-img{
+    position: absolute;
+    left: 0;
+    bottom: -400px;
+    z-index: -1;
+    width: 100%;
 }
 
 .creating_value_table,
@@ -3311,3 +3325,42 @@ aside.show_sidebar{
     letter-spacing: 1.5px;
     line-height: 24px;
 }
+
+/* Products */
+#innovative_propuct{
+    position: relative;
+}
+
+#innovative_propuct .bg-img{
+    position: absolute;
+    left: 0;
+    bottom: -200px;
+    width: 100%;
+    z-index: -1;
+}
+.innovative_propuct_area{
+    padding: 70px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product_flex{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product_flex .product_box{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
