@@ -212,10 +212,6 @@ aside.show_sidebar{
     padding: 0;
 }
 
-#accordion .card-body ul li{
-    padding: 10px 15px;
-}
-
 #accordion .card-body ul li:not(:last-child){
     border-bottom: 1px solid rgba(0,0,0,.125);
 }
@@ -224,6 +220,13 @@ aside.show_sidebar{
     color: #000;
     text-decoration: none;
     font-size: 15px;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+#accordion .card-body ul li a:hover{
+    color: #d11c26;
 }
 
 .slider_logo{
@@ -473,9 +476,13 @@ aside.show_sidebar{
 
 .cover_logo h2{
     font-size: 75px;
-    font-weight: 700;
+    font-weight: 300;
     color: #d11c26;
     text-transform: uppercase;
+}
+
+.cover_logo h2 span{
+    font-weight: 700;
 }
 
 .cover_logo h2:nth-child(2),
@@ -1026,15 +1033,15 @@ aside.show_sidebar{
 }
 
 .core_values_area .value_box:nth-child(1){
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 .core_values_area .value_box:nth-child(2){
-    animation-delay: 1.5s;
+    animation-delay: 1s;
 }
 
 .core_values_area .value_box:nth-child(3){
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 }
 
 .core_values_area .value_box .value_num{
@@ -1108,6 +1115,50 @@ aside.show_sidebar{
 
 .core_values_area .value_box .value_content .value_text p:nth-child(2){
     line-height: 24px;
+}
+
+.corporate_btn, .vision_btn{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.corporate_btn a{
+    display: inline-block;
+    width: 150px;
+    padding: 15px 10px;
+    background: #d11c26;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+.vision_btn  a{
+    display: inline-block;
+    width: 200px;
+    padding: 15px 10px;
+    background: #d11c26;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px;
+    text-align: center;
+    position: relative;
+    z-index: 0;
 }
 
 .section-five{
@@ -1759,7 +1810,7 @@ aside.show_sidebar{
 .section-eight .right_area{
     flex: 0 0 40%;
     max-width: 40%;
-    background: url('../img/thread_fabric_bg.jpg');
+    background: url('../img/00.jpg');
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -2720,6 +2771,7 @@ aside.show_sidebar{
 
 .creating_value_table .dark_grey_area .approach_area .heading{
     margin-bottom: 50px;
+    color: #fff;
 }
 
 .creating_value_table .light_grey_area .capital_area,
@@ -2759,6 +2811,7 @@ aside.show_sidebar{
     -webkit-justify-content: center;
     -webkit-box-pack: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .angle_icon iconify-icon{
@@ -4003,7 +4056,7 @@ aside.show_sidebar{
   }
   
   /* Information about the timeline */
-  .info {
+  .path_area .info {
     display: flex;
     flex-direction: column;
     /* background: #333; */
@@ -4018,7 +4071,7 @@ aside.show_sidebar{
   }
   
   /* Title of the card */
-  .title {
+  .path_area .title {
     color: #d11c26;
     font-size: 26px;
     font-weight: 700;
@@ -4027,7 +4080,7 @@ aside.show_sidebar{
   }
   
   /* Timeline dot  */
-  .title::before {
+  .path_area .title::before {
     content: "";
     position: absolute;
     width: 10px;
@@ -4038,17 +4091,17 @@ aside.show_sidebar{
   }
   
   /* text right if the card is even  */
-  .card:nth-child(even) > .info > .title {
+  .path_area .card:nth-child(even) > .info > .title {
     text-align: right;
   }
   
   /* setting dot to the left if the card is odd */
-  .card:nth-child(odd) > .info > .title::before {
+  .path_area .card:nth-child(odd) > .info > .title::before {
     left: -42px;
   }
   
   /* setting dot to the right if the card is odd */
-  .card:nth-child(even) > .info > .title::before {
+  .path_area .card:nth-child(even) > .info > .title::before {
     right: -42px;
   }
 
@@ -4428,6 +4481,34 @@ aside.show_sidebar{
 
 .section-eight .right_area a:hover::before{
     transform: scaleX(1);
+}
+
+
+.corporate_btn a::before,
+.vision_btn a::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    display: block;
+    z-index: -1;
+    transition: transform 300ms ease-in;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.corporate_btn a:hover::before,
+.vision_btn a:hover::before{
+    transform: scaleX(1);
+}
+
+.corporate_btn a:hover,
+.vision_btn a:hover{
+    color: #d11c26;
+    text-decoration: none;
 }
 
 .download_link_area .right_area .link_list li:hover{

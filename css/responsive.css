@@ -925,25 +925,29 @@
         margin-top: 25px;
     }
 
-    .card:nth-child(odd) {
+    .path_area .card:nth-child(odd) {
         padding: 20px 0 20px 20px;
       }
-      .card:nth-child(even) {
+      .path_area .card:nth-child(even) {
         padding: 20px 20px 20px 0;
       }
 
-      .card:nth-child(odd) > .info > .title::before {
+      .path_area .card:nth-child(odd) > .info > .title::before {
         left: -32px;
       }
-      .card:nth-child(even) > .info > .title::before {
+      .path_area .card:nth-child(even) > .info > .title::before {
         right: -32px;
         top: 5px;
       }
-      .timeline{
+      .path_area .timeline{
         padding: 20px 0;
       }
       .number_define_box:not(:last-child){
         border-bottom: 1px solid #e6e6e6;
+      }
+
+      .cover_logo h2{
+        font-size: 60px;
       }
 }
 
