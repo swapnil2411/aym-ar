@@ -31,6 +31,16 @@
         background: #f8f8f8;
         padding: 25px 40px;
     }
+
+    .national_indicator_1,
+    .national_indicator_2,
+    .aym_brands{
+        right: 50px;
+    }
+
+    .national_indicator_1 {
+        top: 120px;
+    }
 }
 
 @media (max-width: 991px){
@@ -88,6 +98,62 @@
     .md_quote{
         top: 600px;
     }
+
+    .national_indicator_1,
+    .national_indicator_2,
+    .aym_brands{
+        right: 00px;
+    }
+
+    .national_indicator_1 {
+        top: 100px;
+    }
+
+    .national_indicator_1 h3,
+    .national_indicator_2 h3,
+    .national_indicator_2 h3,
+    .aym_brands h3{
+        font-size: 18px;
+    }
+
+    .national_indicator_1 .corporate_office p,
+    .national_indicator_1 .manufacturing_units p,
+    .national_indicator_2 .marketing_office p{
+        font-size: 14px;
+    }
+
+    .national_indicator_1 {
+        top: 50px;
+    }
+
+    .national_indicator_2{
+        bottom: 100px;
+    }
+
+    .national_graph .aym_brands{
+        bottom: 50px;
+    }
+
+    .comp_num_inner_content{
+        height: 200px;
+        width: 200px;
+    }
+
+    .comp_num_inner_content::after{
+        bottom: -40px;
+    }
+
+    .comp_numbering_box{
+        height: 270px;
+    }
+
+    .comp_figure h2{
+        font-size: 30px;
+    }
+
+    .sec_para p{
+        line-height: 20px;
+    }
 }
 
 @media (max-width: 767px){
@@ -134,7 +200,9 @@
     .strategy_flex .strategy_box p,
     .content_box_1 .left_message p, .content_box_1 .left_message ul li, .content_box_1 .right_message ul li, .content_box_2 .left_message p, .content_box_2 .left_message ul li, .content_box_2 .right_message ul li, .content_box_2 .right_message p,
     .md_quote p,
-    .member_desription p{
+    .member_desription p,
+    .info,
+    .number_define_box .define_txt p{
         font-size: 15px;
         font-weight: 500;
     }
@@ -164,7 +232,10 @@
     .innovative_propuct_area,
     .scaling_new_height_section,
     .md_message_section,
-    .number_define_section{
+    .number_define_section,
+    .ourpresence_area,
+    .quarter_results,
+    .path_area{
         padding: 50px 30px;
     }
 
@@ -347,6 +418,284 @@
     .content_box_1 .right_message, .content_box_2 .right_message{
         padding-left: 0;
     }
+
+    .national_indicator_1, .national_indicator_2, .aym_brands{
+        position: unset;
+    }
+
+    .indicator_flex{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .arrow_sec p,
+    .scale_exports .export_box p{
+        font-size: 18px;
+    }
+
+    .scale_exports .export_box h2{
+        font-size: 36px;
+    }
+
+    .quarter_flex .revenue_quarter,
+    .quarter_flex .ebitda_quarter{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .quarter_flex .revenue_quarter{
+        margin-bottom: 20px;
+    }
+
+    .progress_graphs .graph{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0px;
+        margin-bottom: 30px;
+      }
+
+      .progress_graphs .graph .bar1{
+        left: 14%;
+        bottom: 61%;
+      }
+    
+      .progress_graphs .graph .bar2{
+        left: 32%;
+        bottom: 68%;
+      }
+    
+      .progress_graphs .graph .bar3{
+        left: 50%;
+        bottom: 70%;
+      }
+    
+      .progress_graphs .graph .bar4{
+        left: 69%;
+        bottom: 66%;
+      }
+    
+      .progress_graphs .graph .bar5{
+        left: 87%;
+        bottom: 95%;
+      }
+
+      .progress_graphs .graph:nth-child(2) .bar1{
+        left: 13%;
+        bottom: 70%;
+      }
+    
+      .progress_graphs .graph:nth-child(2) .bar2{
+        left: 31%;
+        bottom: 74%;
+      }
+    
+      .progress_graphs .graph:nth-child(2) .bar3{
+        left: 50%;
+        bottom: 82%;
+      }
+    
+      .progress_graphs .graph:nth-child(2) .bar4{
+        left: 68%;
+        bottom: 86%;
+      }
+    
+      .progress_graphs .graph:nth-child(2) .bar5{
+        left: 87%;
+        bottom: 91%;
+      }
+
+      .progress_graphs .graph:nth-child(3) .bar1{
+        left: 14%;
+        bottom: 49%;
+      }
+    
+      .progress_graphs .graph:nth-child(3) .bar2{
+        left: 32%;
+        bottom: 53%;
+      }
+    
+      .progress_graphs .graph:nth-child(3) .bar3{
+        left: 50%;
+        bottom: 61%;
+      }
+    
+      .progress_graphs .graph:nth-child(3) .bar4{
+        left: 68%;
+        bottom: 59%;
+      }
+    
+      .progress_graphs .graph:nth-child(3) .bar5{
+        left: 87%;
+        bottom: 93%;
+      }
+
+      .progress_graphs .graph:nth-child(4) .bar1{
+        left: 13%;
+        bottom: 74%;
+      }
+    
+      .progress_graphs .graph:nth-child(4) .bar2{
+        left: 31%;
+        bottom: 72%;
+      }
+    
+      .progress_graphs .graph:nth-child(4) .bar3{
+        left: 50%;
+        bottom: 82%;
+      }
+    
+      .progress_graphs .graph:nth-child(4) .bar4{
+        left: 69%;
+        bottom: 86%;
+      }
+    
+      .progress_graphs .graph:nth-child(4) .bar5{
+        left: 86%;
+        bottom: 93%;
+      }
+
+      .progress_graphs .graph:nth-child(5) .bar1{
+        left: 13%;
+        bottom: 28%;
+      }
+    
+      .progress_graphs .graph:nth-child(5) .bar2{
+        left: 32%;
+        bottom: 26%;
+      }
+    
+      .progress_graphs .graph:nth-child(5) .bar3{
+        left: 50%;
+        bottom: 42%;
+      }
+    
+      .progress_graphs .graph:nth-child(5) .bar4{
+        left: 69%;
+        bottom: 37%;
+      }
+    
+      .progress_graphs .graph:nth-child(5) .bar5{
+        left: 87%;
+        bottom: 87%;
+      }
+
+      .progress_graphs .graph:nth-child(6) .bar1{
+        left: 14%;
+        bottom: 48%;
+      }
+    
+      .progress_graphs .graph:nth-child(6) .bar2{
+        left: 32%;
+        bottom: 47%;
+      }
+    
+      .progress_graphs .graph:nth-child(6) .bar3{
+        left: 50%;
+        bottom: 55%;
+      }
+    
+      .progress_graphs .graph:nth-child(6) .bar4{
+        left: 69%;
+        bottom: 58%;
+      }
+    
+      .progress_graphs .graph:nth-child(6) .bar5{
+        left: 86%;
+        bottom: 96%;
+      }
+
+      .progress_graphs .graph:nth-child(7) .bar1{
+        left: 14%;
+        bottom: 72%;
+      }
+    
+      .progress_graphs .graph:nth-child(7) .bar2{
+        left: 32%;
+        bottom: 88%;
+      }
+    
+      .progress_graphs .graph:nth-child(7) .bar3{
+        left: 50%;
+        bottom: 68%;
+      }
+    
+      .progress_graphs .graph:nth-child(7) .bar4{
+        left: 68%;
+        bottom: 60%;
+      }
+    
+      .progress_graphs .graph:nth-child(7) .bar5{
+        left: 87%;
+        bottom: 63%;
+      }
+
+      .progress_graphs .graph:nth-child(8) .bar1{
+        left: 14%;
+        bottom: 72%;
+      }
+    
+      .progress_graphs .graph:nth-child(8) .bar2{
+        left: 32%;
+        bottom: 77%;
+      }
+    
+      .progress_graphs .graph:nth-child(8) .bar3{
+        left: 51%;
+        bottom: 85%;
+      }
+    
+      .progress_graphs .graph:nth-child(8) .bar4{
+        left: 69%;
+        bottom: 83%;
+      }
+    
+      .progress_graphs .graph:nth-child(8) .bar5{
+        left: 88%;
+        bottom: 91%;
+      }
+
+      .comp_numbering_box{
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      #number_define_us .bg-img{
+        bottom: -195px;
+      }
+
+      .number_define_box .define_no h2{
+        font-size: 45px;
+      }
+
+      .number_define_box .define_heading h3{
+        font-size: 18px;
+      }
+
+      
+
+      .number_define_box {
+        text-align: center;
+        padding: 15px 0 ;
+      }
+
+      .number_define_box .define_txt p{
+        text-align: center;
+      }
+
+      .navbar_title{
+        left: unset;
+        right: 15px;
+        transform: translate(0, -50%);
+      }
+
+      .cover_page .right_area{
+        top: 100px;
+        left: 3%;
+    }
 }
 
 @media (max-width: 600px){
@@ -372,7 +721,10 @@
     .innovative_propuct_area,
     .scaling_new_height_section,
     .md_message_section,
-    .number_define_section{
+    .number_define_section,
+    .ourpresence_area,
+    .quarter_results,
+    .path_area{
         padding: 50px 20px;
     }
 
@@ -381,8 +733,8 @@
     }
 
     .scaling_box .scaling_img{
-        flex: unset;
-        max-width: unset;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 
     .scaling_box .scaling_context{
@@ -495,7 +847,8 @@
     #capital_commitment .bg-img,
     #netzero_commitment .bg-img,
     #strategic_goals .bg-img,
-    #create_value .bg-img{
+    #create_value .bg-img,
+    #ourpresence .bg-img{
         bottom: -250px;
     }
 
@@ -542,6 +895,56 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+    .indicator_flex{
+        flex-wrap: wrap;
+    }
+
+    .indicator_flex div{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .indicator_flex div:nth-child(1){
+        margin-bottom: 20px;
+    }
+
+    .scale_exports{
+        flex-direction: column;
+        webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    }
+
+    .arrow_sec{
+        margin: 25px 0;
+    }
+
+    .arrow_sec img{
+        transform: rotate(90deg);
+        margin-top: 25px;
+    }
+
+    .card:nth-child(odd) {
+        padding: 20px 0 20px 20px;
+      }
+      .card:nth-child(even) {
+        padding: 20px 20px 20px 0;
+      }
+
+      .card:nth-child(odd) > .info > .title::before {
+        left: -32px;
+      }
+      .card:nth-child(even) > .info > .title::before {
+        right: -32px;
+        top: 5px;
+      }
+      .timeline{
+        padding: 20px 0;
+      }
+      .number_define_box:not(:last-child){
+        border-bottom: 1px solid #e6e6e6;
+      }
 }
 
 @media (max-width: 480px){
@@ -560,7 +963,8 @@
     #capital_commitment .bg-img,
     #netzero_commitment .bg-img,
     #strategic_goals .bg-img,
-    #create_value .bg-img{
+    #create_value .bg-img,
+    #ourpresence .bg-img{
         bottom: -150px;
     }
 
@@ -579,5 +983,18 @@
     .product_flex .product_box{
         flex: 0 0 50%;
         max-width: 50%;
+    }
+
+    .comp_numbering_box {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .comp_numbering_box {
+        height: 240px;
+    }
+
+    #number_define_us .bg-img {
+        bottom: -200px;
     }
 }

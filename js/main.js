@@ -85,7 +85,7 @@ $(document).ready(function(){
                       <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                         <div class="card-body">
                             <ul>
-                                <li><a href="javascript:void">- Products</a></li>
+                                <li><a href="products.html">- Products</a></li>
                                 <li><a href="javascript:void">- Presence</a></li>
                                 <li><a href="javascript:void">- Path</a></li>
                                 <li><a href="javascript:void">- Progress</a></li>
@@ -208,9 +208,95 @@ $(document).ready(function(){
     new WOW().init();
 
     $('.count-up').counterUp({
-        delay: 50,
-        time: 5000
+        delay: 30,
+        time: 3000
     })
-      
+
+    
+
+    const ctx = document.getElementById('revenuechart');
+    const myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+          labels: ['Q1 20-21','Q2 20-21','Q3 20-21','Q4 20-21','Q1 21-22','Q2 21-22','Q3 21-22','Q4 21-22'],
+          datasets: [{
+              label: 'Revenue',
+              data: [91.2, 212.4, 294.2, 349.7, 306.0, 379.3, 400.9, 405.3],
+              backgroundColor: [
+                  'rgba(188, 191, 192, 1)',
+                  'rgba(188, 191, 192, 1)',
+                  'rgba(188, 191, 192, 1)',
+                  'rgba(188, 191, 192, 1)',
+                  'rgba(197, 31, 37, 1)',
+                  'rgba(197, 31, 37, 1)',
+                  'rgba(197, 31, 37, 1)',
+                  'rgba(197, 31, 37, 1)',
+              ]
+          }]
+      },
+      options: {
+          plugins: {
+            legend: {
+              display: false
+            },
+            title: {
+              display: true,
+              text: 'Revenue from operations (₹ Crores)',
+              align: 'start',
+              padding: {
+                bottom: 40,
+              },
+              font: {
+                size: 20
+              }
+            }
+          }
+      }
+    });
+
+    const ctx1 = document.getElementById('ebitdachart');
+    const myChart1 = new Chart(ctx1, {
+      type: 'bar',
+      data: {
+          labels: ['Q1 20-21','Q2 20-21','Q3 20-21','Q4 20-21','Q1 21-22','Q2 21-22','Q3 21-22','Q4 21-22'],
+          datasets: [{
+              label: 'EBITDA',
+              data: [-5.6, 21.1, 35.4, 43.4, 33.3, 43.2, 44.3, 45.3],
+              backgroundColor: [
+                  'rgba(188, 191, 192, 1)',
+                  'rgba(188, 191, 192, 1)',
+                  'rgba(188, 191, 192, 1)',
+                  'rgba(188, 191, 192, 1)',
+                  'rgba(197, 31, 37, 1)',
+                  'rgba(197, 31, 37, 1)',
+                  'rgba(197, 31, 37, 1)',
+                  'rgba(197, 31, 37, 1)',
+              ]
+          }]
+      },
+      options: {
+          plugins: {
+            legend: {
+              display: false
+            },
+            title: {
+              display: true,
+              text: 'EBITDA (₹ Crores)',
+              align: 'start',
+              padding: {
+                bottom: 40,
+              },
+              font: {
+                size: 20
+              }
+            },
+          }
+      }
+    });
+
+
+
+    
+    
 })
 
