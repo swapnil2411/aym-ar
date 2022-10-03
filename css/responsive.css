@@ -162,6 +162,10 @@
         font-size: 28px;
     }
 
+    .scaling_box{
+        height: 300px;
+    }
+
     .scaling_new_height_section .sec_title p,
     .scaling_box .scaling_context h3{
         font-size: 20px;
@@ -730,11 +734,13 @@
 
     .scaling_box{
         flex-wrap: wrap;
+        height: 100%;
     }
 
     .scaling_box .scaling_img{
         flex: 0 0 100%;
         max-width: 100%;
+        height: 300px;
     }
 
     .scaling_box .scaling_context{
@@ -948,6 +954,10 @@
 
       .cover_logo h2{
         font-size: 60px;
+      }
+
+      .empowering_people_area .employee_engagement .empower_flex .empower_box .emp_img{
+        height: 200px;
       }
 }
 

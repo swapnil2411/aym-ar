@@ -476,14 +476,12 @@ aside.show_sidebar{
 
 .cover_logo h2{
     font-size: 75px;
-    font-weight: 300;
+    font-weight: 700;
     color: #d11c26;
     text-transform: uppercase;
 }
 
-.cover_logo h2 span{
-    font-weight: 700;
-}
+
 
 .cover_logo h2:nth-child(2),
 .cover_logo h2:nth-child(3){
@@ -518,16 +516,35 @@ aside.show_sidebar{
     text-decoration: none;
     color: #fff;
     padding: 10px 25px;
-    border-radius: 5px;
-    border: 1px solid #d11c26;
     transition: 0.5s ease-in-out all;
     animation-delay: 1.5s;
+    position: relative;
+    z-index: 0;
+}
+
+.cover_page .right_area a::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    display: block;
+    z-index: -1;
+    transition: transform 300ms ease-in;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.cover_page .right_area a:hover::before{
+    transform: scaleX(1);
 }
 
 .cover_page .right_area a:hover{
-    background: transparent;
     color: #d11c26;
 }
+
 
 .cover_page .right_area a iconify-icon{
     font-size: 24px;
@@ -589,10 +606,14 @@ aside.show_sidebar{
     display: flex;
     position: absolute;
     left: -50px;
-    bottom: -20px;
+    bottom: -10px;
     z-index: -1;
 }
 
+
+.scaling_content .thread_collection .thread img{
+    max-width: 100%;
+}
 
 .thread_collection .thread2{
     animation-delay: 0.2s;
@@ -2054,12 +2075,20 @@ aside.show_sidebar{
     -webkit-box-align: center;
     align-items: center; */
     margin-bottom: 20px;
-    height: 100%;
+    height: 250px;
 }
 
 .scaling_box .scaling_img{
     flex: 0 0 15%;
     max-width: 15%;
+}
+
+.scaling_box .scaling_img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 
 .scaling_box .scaling_context{
@@ -3094,6 +3123,21 @@ aside.show_sidebar{
     max-width: 31%;
 }
 
+.empowering_people_area .employee_engagement .empower_flex .empower_box .emp_img{
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.empowering_people_area .employee_engagement .empower_flex .empower_box .emp_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.empowering_people_area .employee_engagement .empower_flex .empower_box:nth-child(3) .emp_img img{
+    object-position: top;
+}
+
 .empowering_people_area .employee_engagement .empower_flex .empower_box h2{
     font-size: 20px;
     text-align: left;
@@ -3749,6 +3793,18 @@ aside.show_sidebar{
     margin: 0 auto;
 }
 
+#quarter_results{
+    position: relative;
+}
+
+#quarter_results .bg-img{
+    position: absolute;
+    left: 0;
+    bottom: -400px;
+    z-index: -1;
+    width: 100%;
+}
+
 .quarter_results .review_area{
     margin-top: 25px;
 }
@@ -4067,8 +4123,9 @@ aside.show_sidebar{
     line-height: 24px;
     text-align: justify;
     padding: 10px;
-    height: 100px;
   }
+
+  
   
   /* Title of the card */
   .path_area .title {
@@ -4091,8 +4148,29 @@ aside.show_sidebar{
   }
   
   /* text right if the card is even  */
-  .path_area .card:nth-child(even) > .info > .title {
+  .path_area .card:nth-child(even) > .info > .title{
     text-align: right;
+  }
+
+  .path_area .card > .info > .icon{
+    background: #e8eaea;
+    height: 100px;
+    width: 100px;
+    padding: 15px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+
+  .path_area .card > .info > .icon img{
+    max-width: 60px;
+  }
+
+  .path_area .card:nth-child(even) > .info > .icon{
+    margin-left: auto;
   }
   
   /* setting dot to the left if the card is odd */
@@ -4397,7 +4475,7 @@ aside.show_sidebar{
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #f1f1f2;
+    background: #fff;
     left: 0;
     top: 0;
     display: block;
