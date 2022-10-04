@@ -286,7 +286,7 @@ aside.show_sidebar{
     text-align: center;
     padding: 15px 10px;
     color: #d11c26;
-    font-weight: 700;
+    /* font-weight: 700; */
     position: relative;
     z-index: 1;
 }
@@ -682,8 +682,8 @@ aside.show_sidebar{
 .sec_para p{
     color: #2f2f2f;
     font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+    /* font-weight: 600;
+    letter-spacing: 1.5px; */
     line-height: 24px;
     text-align: justify;
 }
@@ -2362,8 +2362,8 @@ aside.show_sidebar{
 .content_box_2 .right_message ul li,
 .content_box_2 .right_message p{
     font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+    /* font-weight: 600; */
+    /* letter-spacing: 1.5px; */
     line-height: 24px;
     text-align: justify;
     word-wrap: break-word;
@@ -2455,29 +2455,6 @@ aside.show_sidebar{
     cursor: pointer;
 }
 
-.member_desription{
-    background: #d11c26;
-    color: #fff;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 1.5px;
-    font-weight: 600;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    width: calc(100% - 20px);
-    height: calc(100% - 82px);
-    padding: 25px;
-    text-align: justify;
-    word-wrap: break-word;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: 0.5s ease-in-out all;
-    z-index: 3;
-    overflow-y: auto;
-}
-
 .top_leadership_area .team_member_column:hover .member_desription{
     transform: translateY(0%);
     visibility: visible;
@@ -2525,8 +2502,6 @@ aside.show_sidebar{
     color: #fff;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 1.5px;
-    font-weight: 600;
     position: absolute;
     top: 0;
     left: 10px;
@@ -2589,8 +2564,8 @@ aside.show_sidebar{
     color: #fff;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 1.5px;
-    font-weight: 600;
+    /* letter-spacing: 1.5px; */
+    /* font-weight: 600; */
     position: absolute;
     top: 0;
     left: 10px;
@@ -2691,8 +2666,8 @@ aside.show_sidebar{
 
 .vision_box p{
     font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+    /* font-weight: 600; */
+    /* letter-spacing: 1.5px; */
     line-height: 24px;
     text-align: justify;
 }
@@ -2916,9 +2891,8 @@ aside.show_sidebar{
 .capital_box .capital_txt p{
     color: #6d6e73;
     font-size: 16px;
-    font-weight: 600;
+    /* font-weight: 600; */
     line-height: 24px;
-    letter-spacing: 1.5px;
 }
 
 .inputs_area_2 .inputs_box{
@@ -2936,9 +2910,8 @@ aside.show_sidebar{
 .inputs_box p, .inputs_area_2 .inputs_box li{
     color: #6d6e73;
     font-size: 16px;
-    font-weight: 600;
+    /* font-weight: 600; */
     line-height: 24px;
-    letter-spacing: 1.5px;
 }
 
 .approach_box{
@@ -2956,7 +2929,6 @@ aside.show_sidebar{
     color: #fff;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 1.5px;
 }
 
 .table_line{
@@ -3007,8 +2979,8 @@ aside.show_sidebar{
 .initiative_box .txt p{
     color: #2f2f2f;
     font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+    /* font-weight: 600;
+    letter-spacing: 1.5px; */
     line-height: 24px;
     text-align: justify;
 }
@@ -3065,8 +3037,8 @@ aside.show_sidebar{
 .empowering_people_area .empower_sec p{
     color: #2f2f2f;
     font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+    /* font-weight: 600; */
+    /* letter-spacing: 1.5px; */
     line-height: 24px;
     text-align: justify;
 }
@@ -3271,8 +3243,8 @@ aside.show_sidebar{
 .our_community_area .community_flex .community_box .txt p{
     color: #2f2f2f;
     font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+    /* font-weight: 600;
+    letter-spacing: 1.5px; */
     line-height: 24px;
 }
 
@@ -3331,8 +3303,8 @@ aside.show_sidebar{
 .four_s_box .right_box p{
     color: #2f2f2f;
     font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+    /* font-weight: 600; */
+    /* letter-spacing: 1.5px; */
     line-height: 24px;
     text-align: justify;
 }
@@ -3404,8 +3376,8 @@ aside.show_sidebar{
 .capital_flex .cap_box .left_cap_box p{
     color: #8d8d8d;
     font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+    /* font-weight: 600; */
+    /* letter-spacing: 1.5px; */
     line-height: 24px;
 }
 
@@ -3419,8 +3391,8 @@ aside.show_sidebar{
 .capital_flex .cap_box .right_cap_box p{
     color: #8d8d8d;
     font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+    /* font-weight: 600;
+    letter-spacing: 1.5px; */
     line-height: 24px;
 }
 
@@ -3488,8 +3460,8 @@ aside.show_sidebar{
 .net_zero_flex .right_area ul li{
     color: #2f2f2f;
     font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+    /* font-weight: 600;
+    letter-spacing: 1.5px; */
     line-height: 24px;
     list-style: disc;
 }
@@ -3542,8 +3514,8 @@ aside.show_sidebar{
 .strategy_flex .strategy_box p{
     color: #2f2f2f;
     font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+    /* font-weight: 600;
+    letter-spacing: 1.5px; */
     line-height: 24px;
 }
 
@@ -3696,7 +3668,7 @@ aside.show_sidebar{
 .national_indicator_1 .manufacturing_units p{
     margin-left: 25px;
     color: #8d8d8d;
-    font-weight: 600;
+    /* font-weight: 600; */
     margin-top: 5px;
 }
 
@@ -3730,7 +3702,7 @@ aside.show_sidebar{
 .national_indicator_2 .marketing_office p{
     margin-left: 25px;
     color: #8d8d8d;
-    font-weight: 600;
+    /* font-weight: 600; */
     margin-top: 5px;
 }
 
