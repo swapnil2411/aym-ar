@@ -216,7 +216,9 @@ $(document).ready(function(){
         time: 1500
     })
 
-    
+    $('.nav_bullet a').on('click', function(){
+      $(this).addClass('active').siblings().removeClass('active');
+    })
 
     const ctx = document.getElementById('revenuechart');
     const myChart = new Chart(ctx, {

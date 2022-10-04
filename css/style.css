@@ -23,6 +23,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 body {
 	line-height: 1;
     font-family: 'Source Sans Pro', sans-serif;
@@ -4586,4 +4590,39 @@ aside.show_sidebar{
 
 .download_link_area .right_area .link_list li:hover::before{
     transform: scaleX(1);
+}
+
+/* Nav Bullets */
+.nav_bullet{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    /* background: #fff; */
+    padding: 10px;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.nav_bullet a{
+    display: inline-block;
+}
+
+.nav_bullet a.active span{
+    background: #d11c26;
+}
+
+.nav_bullet a span{
+    height: 15px;
+    width: 15px;
+    border: 1px solid #d11c26;
+    display: block;
+    margin-bottom: 8px;
 }
