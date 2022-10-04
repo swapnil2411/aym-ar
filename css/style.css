@@ -1904,7 +1904,7 @@ aside.show_sidebar{
     margin-bottom: 15px;
     color: #fff;
     text-decoration: none;
-    font-weight: 700;
+    /* font-weight: 700; */
     position: relative;
     z-index: 1;
 }
@@ -2019,7 +2019,7 @@ aside.show_sidebar{
     display: block;
     color: #d11c26;
     text-decoration: none;
-    font-weight: 700;
+    /* font-weight: 700; */
     text-align: center;
     padding: 15px;
 }
@@ -4616,13 +4616,13 @@ aside.show_sidebar{
 }
 
 .nav_bullet a.active span{
-    background: #d11c26;
+    background: #939598;
 }
 
 .nav_bullet a span{
     height: 15px;
     width: 15px;
-    border: 1px solid #d11c26;
+    border: 1px solid #939598;
     display: block;
     margin-bottom: 8px;
 }

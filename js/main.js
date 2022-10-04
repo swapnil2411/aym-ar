@@ -216,6 +216,60 @@ $(document).ready(function(){
         time: 1500
     })
 
+    const sections = document.querySelectorAll('section');
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          // console.log(entry.target);
+          entry.target.classList.toggle('showScreen', entry.isIntersecting);
+          
+        })
+        if ($("#sec_one").hasClass("showScreen")) {
+          $('.nav_bullet a:nth-child(1)').addClass('active').siblings().removeClass('active');
+        }
+  
+        if ($("#sec_two").hasClass("showScreen")) {
+          $('.nav_bullet a:nth-child(2)').addClass('active').siblings().removeClass('active');
+        }
+  
+        if ($("#sec_three").hasClass("showScreen")) {
+          $('.nav_bullet a:nth-child(3)').addClass('active').siblings().removeClass('active');
+        }
+  
+        if ($("#sec_four").hasClass("showScreen")) {
+          $('.nav_bullet a:nth-child(4)').addClass('active').siblings().removeClass('active');
+        }
+        if ($("#sec_five").hasClass("showScreen")) {
+          $('.nav_bullet a:nth-child(5)').addClass('active').siblings().removeClass('active');
+        }
+  
+        if ($("#sec_six").hasClass("showScreen")) {
+          $('.nav_bullet a:nth-child(6)').addClass('active').siblings().removeClass('active');
+        }
+  
+        if ($("#sec_seven").hasClass("showScreen")) {
+          $('.nav_bullet a:nth-child(7)').addClass('active').siblings().removeClass('active');
+        }
+  
+        if ($("#sec_eight").hasClass("showScreen")) {
+          $('.nav_bullet a:nth-child(8)').addClass('active').siblings().removeClass('active');
+        }
+        if ($("#sec_nine").hasClass("showScreen")) {
+          $('.nav_bullet a:nth-child(9)').addClass('active').siblings().removeClass('active');
+        }
+      },
+      {
+        threshold: 0.2,
+      })
+
+      sections.forEach(section => {
+        
+        observer.observe(section)
+      })
+
+    
+      
+
     $('.nav_bullet a').on('click', function(){
       $(this).addClass('active').siblings().removeClass('active');
     })
