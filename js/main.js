@@ -92,7 +92,7 @@ $(document).ready(function(){
                               <li><a href="products.html">- Products</a></li>
                               <li><a href="ourpresence.html">- Presence</a></li>
                               <li><a href="path.html">- Path</a></li>
-                              <li><a href="progress.html">- Progress</a></li>
+                              <li><a href="healthyprogressparameters.html">- Progress</a></li>
                               <li><a href="visionprinciple.html">- Vision and Principles</a></li>
                           </ul>
                       </div>

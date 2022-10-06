@@ -391,12 +391,9 @@
     }
 
     .four_s_box .left_box img{
-        max-width: 100%;
-        width: unset;
-        height: unset;
-        margin: 0 auto;
+        max-width: 100%; 
         display: block;
-        margin-bottom: 20px;
+        height: 350px;
     }
 
     .net_zero_flex .right_area h3{

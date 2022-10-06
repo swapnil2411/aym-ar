@@ -862,6 +862,7 @@ aside.show_sidebar{
 .number_define h3{
     font-size: 24px;
     color:#fff;
+    text-align: center;
 }
 
 .company_numbers{
@@ -1736,10 +1737,11 @@ aside.show_sidebar{
     padding: 70px 50px;
     position: relative;
     overflow: hidden;
-    background-image: url('../img/dot-element-opacity.png');
+    background: #f8f8f8;
+    /* background-image: url('../img/dot-element-opacity.png');
     background-size: contain;
     background-position: bottom;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 .capabilities_area{
@@ -2124,6 +2126,7 @@ aside.show_sidebar{
     font-size: 18px;
     font-weight: 600;
     color: #6d6e73;
+    text-align: center;
 }
 
 .number_define_box .define_no h2{
@@ -2142,7 +2145,9 @@ aside.show_sidebar{
     margin-bottom: 70px;
 }
 
-
+.top_number_define .number_define_box{
+    text-align: center;
+}
 
 .comp_figure h2{
     font-size: 40px;
@@ -4615,14 +4620,15 @@ aside.show_sidebar{
     display: inline-block;
 }
 
-.nav_bullet a.active span{
-    background: #939598;
-}
-
 .nav_bullet a span{
     height: 15px;
     width: 15px;
     border: 1px solid #939598;
     display: block;
     margin-bottom: 8px;
+    background: #fff;
+}
+
+.nav_bullet a.active span{
+    background: #939598;
 }

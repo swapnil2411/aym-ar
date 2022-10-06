@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYM Annual Report</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <my-header></my-header>
+
+    <main class="text_body" id="quarter_results">
+        <div class="quarter_results">
+            <div class="sec_title">
+                <h2>A Year in Review: Growth Indicators</h2>
+            </div>
+
+            <div class="sec_para">
+                <p>
+                    When we started the year, we were just recovering from a pandemic-induced economic slump. The outlook continued
+to be uncertain and the journey seemed arduous. From what may have felt like rock bottom to some, we fought all odds
+to end the year with the highest ever annual figures across financial and operational parameters. Our commitment to
+capital, and our allegiance to consistent action come what may have enabled us to end FY 21-22 at a high note.
+                </p>
+            </div>
+
+            
+            <div class="progress_graphs">
+                <div class="graph">
+                    <canvas id="revenuegraph" width="100%" height="100%"></canvas>
+                    <h3>Revenue from Operations <span>(₹ Crores)</span></h3>
+                    <span class="bar1">850.4</span>
+                    <span class="bar2">992.4</span>
+                    <span class="bar3">1028.0</span>
+                    <span class="bar4">947.4</span>
+                    <span class="bar5">1491.5</span>
+                </div>
+                <div class="graph">
+                    <canvas id="exportgraph" width="100%" height="100%"></canvas>
+                    <h3>Export share <span>(%)</span></h3>
+                    <span class="bar1">32.3</span>
+                    <span class="bar2">34.8</span>
+                    <span class="bar3">39.8</span>
+                    <span class="bar4">42.4</span>
+                    <span class="bar5">45.4</span>
+                </div>
+                <div class="graph">
+                    <canvas id="ebitda1graph" width="100%" height="100%"></canvas>
+                    <h3>EBITDA <span>(₹ Crores)</span></h3>
+                    <span class="bar1">69.3</span>
+                    <span class="bar2">77.5</span>
+                    <span class="bar3">97.6</span>
+                    <span class="bar4">94.2</span>
+                    <span class="bar5">166.1</span>
+                </div>
+                <div class="graph">
+                    <canvas id="ebitda2graph" width="100%" height="100%"></canvas>
+                    <h3>EBITDA <span>(% to Revenue)</span></h3>
+                    <span class="bar1">8.1%</span>
+                    <span class="bar2">7.8%</span>
+                    <span class="bar3">9.5%</span>
+                    <span class="bar4">9.9%</span>
+                    <span class="bar5">11.1%</span>
+                </div>
+                <div class="graph">
+                    <canvas id="pat" width="100%" height="100%"></canvas>
+                    <h3>PAT <span>(₹ Crores)</span></h3>
+                    <span class="bar1">8.0</span>
+                    <span class="bar2">5.9</span>
+                    <span class="bar3">17.4</span>
+                    <span class="bar4">14.1</span>
+                    <span class="bar5">50.8</span>
+                </div>
+                <div class="graph">
+                    <canvas id="roce" width="100%" height="100%"></canvas>
+                    <h3>Return on Capital Employed <span>(%)</span></h3>
+                    <span class="bar1">6.6</span>
+                    <span class="bar2">6.5</span>
+                    <span class="bar3">8.2</span>
+                    <span class="bar4">9.0</span>
+                    <span class="bar5">17.3</span>
+                </div>
+                <div class="graph">
+                    <canvas id="debt" width="100%" height="100%"></canvas>
+                    <h3>Debt Equity Ratio</h3>
+                    <span class="bar1">0.86</span>
+                    <span class="bar2">1.03</span>
+                    <span class="bar3">0.74</span>
+                    <span class="bar4">0.62</span>
+                    <span class="bar5">0.67</span>
+                </div>
+                <div class="graph">
+                    <canvas id="facr" width="100%" height="100%"></canvas>
+                    <h3>Fixed Asset Coverage Ratio</h3>
+                    <span class="bar1">2.0</span>
+                    <span class="bar2">2.2</span>
+                    <span class="bar3">2.5</span>
+                    <span class="bar4">2.4</span>
+                    <span class="bar5">2.7</span>
+                </div>
+            </div>
+
+            <div class="note_area">
+                <p>
+                    RoCE is calculated on closing capital employed<br>
+                    Export share (%) is calculated on the net sales during the year
+                </p>
+            </div>
+           
+        </div>
+    </main>
+    <!-- Header End -->
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        const revenuegraph = document.getElementById('revenuegraph');
+        const myRevenuegraph = new Chart(revenuegraph, {
+            type: 'bar',
+            data: {
+                labels: ['FY 17-18','FY 18-19','FY-19-20','FY 20-21','FY 21-22'],
+                datasets: [{
+                    label: '',
+                    data: [850.4, 992.0, 1028.0, 947.4, 1491.5],
+                    backgroundColor: [
+                        'rgba(203, 205, 207, 1)',
+                        'rgba(203, 205, 207, 1)',
+                        'rgba(170, 172, 174, 1)',
+                        'rgba(170, 172, 174, 1)',
+                        'rgba(197, 31, 37, 1)',
+                    ]
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                    display: false
+                    },
+                    
+                }
+            }
+        });
+
+        const exportgraph = document.getElementById('exportgraph');
+        const myExportgraph = new Chart(exportgraph, {
+            type: 'bar',
+            data: {
+                labels: ['FY 17-18','FY 18-19','FY-19-20','FY 20-21','FY 21-22'],
+                datasets: [{
+                    label: '',
+                    data: [32.3, 34.8, 39.8, 42.4, 45.4],
+                    backgroundColor: [
+                        'rgba(203, 205, 207, 1)',
+                        'rgba(203, 205, 207, 1)',
+                        'rgba(170, 172, 174, 1)',
+                        'rgba(170, 172, 174, 1)',
+                        'rgba(197, 31, 37, 1)',
+                    ]
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                    display: false
+                    },
+                }
+            }
+        });
+
+        const ebitda1graph = document.getElementById('ebitda1graph');
+        const myEbitda1graph = new Chart(ebitda1graph, {
+            type: 'bar',
+            data: {
+                labels: ['FY 17-18','FY 18-19','FY-19-20','FY 20-21','FY 21-22'],
+                datasets: [{
+                    label: '',
+                    data: [69.3, 77.5, 97.6, 94.2, 166.1],
+                    backgroundColor: [
+                        'rgba(203, 205, 207, 1)',
+                        'rgba(203, 205, 207, 1)',
+                        'rgba(170, 172, 174, 1)',
+                        'rgba(170, 172, 174, 1)',
+                        'rgba(197, 31, 37, 1)',
+                    ]
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                    display: false
+                    },
+                }
+            }
+        });
+        const ebitda2graph = document.getElementById('ebitda2graph');
+        const myEbitda2graph = new Chart(ebitda2graph, {
+            type: 'bar',
+            data: {
+                labels: ['FY 17-18','FY 18-19','FY-19-20','FY 20-21','FY 21-22'],
+                datasets: [{
+                    label: '',
+                    data: [8.1, 7.8, 9.5, 9.9, 11.1],
+                    backgroundColor: [
+                        'rgba(203, 205, 207, 1)',
+                        'rgba(203, 205, 207, 1)',
+                        'rgba(170, 172, 174, 1)',
+                        'rgba(170, 172, 174, 1)',
+                        'rgba(197, 31, 37, 1)',
+                    ]
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                    display: false
+                    },
+                }
+            }
+        });
+        const pat = document.getElementById('pat');
+        const myPatgraph = new Chart(pat, {
+            type: 'bar',
+            data: {
+                labels: ['FY 17-18','FY 18-19','FY-19-20','FY 20-21','FY 21-22'],
+                datasets: [{
+                    label: '',
+                    data: [8.0, 5.9, 17.4, 14.1, 50.8],
+                    backgroundColor: [
+                        'rgba(203, 205, 207, 1)',
+                        'rgba(203, 205, 207, 1)',
+                        'rgba(170, 172, 174, 1)',
+                        'rgba(170, 172, 174, 1)',
+                        'rgba(197, 31, 37, 1)',
+                    ]
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                    display: false
+                    },
+                }
+            }
+        });
+
+        const roce = document.getElementById('roce');
+        const myRocegraph = new Chart(roce, {
+            type: 'bar',
+            data: {
+                labels: ['FY 17-18','FY 18-19','FY-19-20','FY 20-21','FY 21-22'],
+                datasets: [{
+                    label: '',
+                    data: [6.6, 6.5, 8.2, 9.0, 17.3],
+                    backgroundColor: [
+                        'rgba(203, 205, 207, 1)',
+                        'rgba(203, 205, 207, 1)',
+                        'rgba(170, 172, 174, 1)',
+                        'rgba(170, 172, 174, 1)',
+                        'rgba(197, 31, 37, 1)',
+                    ]
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                    display: false
+                    },
+                }
+            }
+        });
+
+        const debt = document.getElementById('debt');
+        const myDebtgraph = new Chart(debt, {
+            type: 'bar',
+            data: {
+                labels: ['FY 17-18','FY 18-19','FY-19-20','FY 20-21','FY 21-22'],
+                datasets: [{
+                    label: '',
+                    data: [0.8, 1.03, 0.74, 0.62, 0.67],
+                    backgroundColor: [
+                        'rgba(203, 205, 207, 1)',
+                        'rgba(203, 205, 207, 1)',
+                        'rgba(170, 172, 174, 1)',
+                        'rgba(170, 172, 174, 1)',
+                        'rgba(197, 31, 37, 1)',
+                    ]
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                    display: false
+                    },
+                }
+            }
+        });
+
+        const facr = document.getElementById('facr');
+        const myFacrgraph = new Chart(facr, {
+            type: 'bar',
+            data: {
+                labels: ['FY 17-18','FY 18-19','FY-19-20','FY 20-21','FY 21-22'],
+                datasets: [{
+                    label: '',
+                    data: [2.0, 2.2, 2.5, 2.4, 2.7],
+                    backgroundColor: [
+                        'rgba(203, 205, 207, 1)',
+                        'rgba(203, 205, 207, 1)',
+                        'rgba(170, 172, 174, 1)',
+                        'rgba(170, 172, 174, 1)',
+                        'rgba(197, 31, 37, 1)',
+                    ]
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                    display: false
+                    },
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
