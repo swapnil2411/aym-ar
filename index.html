@@ -645,28 +645,20 @@
     <script>
       
     </script>
-    <!-- <script>
-      //Animation Number
-    const counternum = document.querySelectorAll('.count-up');
-    // console.log(counternum)
-    const speed = 200;
-    
-    counternum.forEach((element) => {
-      const updateNumber = () =>{
-        const targetNumber = parseInt(element.dataset.target);
-        // console.log(targetNumber);
-        const initialNumber = parseInt(element.innerText)
-        // console.log(initialNumber);
-        const incrementNumber = Math.trunc(targetNumber / speed);
-        // console.log(incrementNumber);
-        if(initialNumber < targetNumber){
-          element.innerText = initialNumber + incrementNumber;
+    <script>
+      const reviewbox = document.querySelectorAll('.review_box')
+      const observer1 = new IntersectionObserver(entries => {
+        // console.log(entries)
+        entries.forEach(entry => {
+          entry.target.classList.toggle('fill', entry.isIntersecting);
+          if(entry.isIntersecting) observer1.unobserve(entry.target);
+        })
+      })
 
-          setTimeout(updateNumber, 10)
-        }
-      }z
-      updateNumber();
-    });
-    </script> -->
+      reviewbox.forEach(box => {
+        observer1.observe(box)
+      })
+      
+    </script>
 </body>
 </html>

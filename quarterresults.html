@@ -470,9 +470,25 @@ capital, and our allegiance to consistent action come what may have enabled us t
     <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="js/jquery.countup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+      const reviewbox1 = document.querySelectorAll('.review_box')
+      const observer2 = new IntersectionObserver(entries => {
+        // console.log(entries)
+        entries.forEach(entry => {
+          entry.target.classList.toggle('fill', entry.isIntersecting);
+          if(entry.isIntersecting) observer2.unobserve(entry.target);
+        })
+      })
+
+      reviewbox1.forEach(box => {
+        observer2.observe(box)
+      })
+      
+    </script>
 </body>
 </html>
 

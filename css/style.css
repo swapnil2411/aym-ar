@@ -1319,320 +1319,458 @@ aside.show_sidebar{
     top: 2px;
 }
 
-.ratio_indicators .indicator .red-in::after{
+.review_box .ratio_indicators .indicator .red-in::after{
     background: #d11c26;
 }
 
-.ratio_indicators .indicator .grey-in::after{
+.review_box .ratio_indicators .indicator .grey-in::after{
     background: radial-gradient(666px at 0.4% 48%, rgb(202, 204, 227) 0%, rgb(89, 89, 99) 97.5%);
 }
 
-.ratio_indicators .indicator1 .red-in::after{
+.review_box .ratio_indicators .indicator1 .red-in::after{
     content: '';
     position: absolute;
     width: 75%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;
+}
+
+.review_box.fill .ratio_indicators .indicator1 .red-in::after{
+    transform: scaleX(1);
 }
 
 .ratio_indicators .indicator1 .profit{
     left: 77%;
 }
 
-.ratio_indicators .indicator2 .grey-in::after{
+.review_box .ratio_indicators .indicator2 .grey-in::after{
     content: '';
     position: absolute;
     width: 50%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;
+}
+
+.review_box.fill .ratio_indicators .indicator2 .grey-in::after{
+    transform: scaleX(1);
 }
 
 .ratio_indicators .indicator2 .profit{
     left: 52%;
 }
 
-.ratio_indicators .indicator3 .red-in::after{
+.review_box .ratio_indicators .indicator3 .red-in::after{
     content: '';
     position: absolute;
     width: 70%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;
+}
+
+.review_box.fill .ratio_indicators .indicator3 .red-in::after{
+    transform: scaleX(1);
 }
 
 .ratio_indicators .indicator3 .profit{
     left: 72%;
 }
 
-.ratio_indicators .indicator4 .grey-in::after{
+.review_box .ratio_indicators .indicator4 .grey-in::after{
     content: '';
     position: absolute;
     width: 55%;
     height: 25px;
     left: 0;
     top: 0;
+     transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;   
+}
+
+.review_box.fill .ratio_indicators .indicator4 .grey-in::after{
+    transform: scaleX(1);
 }
 
 .ratio_indicators .indicator4 .profit{
     left: 57%;
 }
 
-.ratio_indicators .indicator5 .red-in::after{
+.review_box .ratio_indicators .indicator5 .red-in::after{
     content: '';
     position: absolute;
     width: 70%;
     height: 25px;
     left: 0;
     top: 0;
+     transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all; 
 }
 
 .ratio_indicators .indicator5 .profit{
     left: 72%;
 }
 
-.ratio_indicators .indicator6 .grey-in::after{
+.review_box .ratio_indicators .indicator6 .grey-in::after{
     content: '';
     position: absolute;
     width: 45%;
     height: 25px;
     left: 0;
     top: 0;
+     transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all; 
+}
+
+.review_box.fill .ratio_indicators .indicator5 .red-in::after,
+.review_box.fill .ratio_indicators .indicator6 .grey-in::after{
+    transform: scaleX(1);
 }
 
 .ratio_indicators .indicator6 .profit{
     left: 47%;
 }
 
-.ratio_indicators .indicator7 .red-in::after{
+.review_box .ratio_indicators .indicator7 .red-in::after{
     content: '';
     position: absolute;
     width: 70%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all; 
 }
 
 .ratio_indicators .indicator7 .profit{
     left: 72%;
 }
 
-.ratio_indicators .indicator8 .grey-in::after{
+.review_box .ratio_indicators .indicator8 .grey-in::after{
     content: '';
     position: absolute;
     width: 30%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all; 
+}
+
+.review_box.fill .ratio_indicators .indicator7 .red-in::after,
+.review_box.fill .ratio_indicators .indicator8 .grey-in::after{
+    transform: scaleX(1);
 }
 
 .ratio_indicators .indicator8 .profit{
     left: 32%;
 }
 
-.ratio_indicators .indicator9 .red-in::after{
+.review_box .ratio_indicators .indicator9 .red-in::after{
     content: '';
     position: absolute;
     width: 70%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all; 
 }
 
 .ratio_indicators .indicator9 .profit{
     left: 72%;
 }
 
-.ratio_indicators .indicator10 .grey-in::after{
+.review_box .ratio_indicators .indicator10 .grey-in::after{
     content: '';
     position: absolute;
     width: 32%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all; 
+}
+
+.review_box.fill .ratio_indicators .indicator9 .red-in::after,
+.review_box.fill .ratio_indicators .indicator10 .grey-in::after{
+    transform: scaleX(1);
 }
 
 .ratio_indicators .indicator10 .profit{
     left: 34%;
 }
 
-.ratio_indicators .indicator11 .red-in::after{
+.review_box .ratio_indicators .indicator11 .red-in::after{
     content: '';
     position: absolute;
     width: 70%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;
 }
 
 .ratio_indicators .indicator11 .profit{
     left: 72%;
 }
 
-.ratio_indicators .indicator12 .grey-in::after{
+.review_box .ratio_indicators .indicator12 .grey-in::after{
     content: '';
     position: absolute;
     width: 64%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;
+}
+
+.review_box.fill .ratio_indicators .indicator11 .red-in::after,
+.review_box.fill .ratio_indicators .indicator12 .grey-in::after{
+    transform: scaleX(1);
 }
 
 .ratio_indicators .indicator12 .profit{
     left: 66%;
 }
 
-.ratio_indicators .indicator13 .red-in::after{
+.review_box .ratio_indicators .indicator13 .red-in::after{
     content: '';
     position: absolute;
     width: 75%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;
 }
 
 .ratio_indicators .indicator13 .profit{
     left: 77%;
 }
 
-.ratio_indicators .indicator14 .grey-in::after{
+.review_box .ratio_indicators .indicator14 .grey-in::after{
     content: '';
     position: absolute;
     width: 20%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;
+}
+
+.review_box.fill .ratio_indicators .indicator13 .red-in::after,
+.review_box.fill .ratio_indicators .indicator14 .grey-in::after{
+    transform: scaleX(1)
 }
 
 .ratio_indicators .indicator14 .profit{
     left: 22%;
 }
 
-.ratio_indicators .indicator15 .red-in::after{
+.review_box .ratio_indicators .indicator15 .red-in::after{
     content: '';
     position: absolute;
     width: 75%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;
 }
 
 .ratio_indicators .indicator15 .profit{
     left: 77%;
 }
 
-.ratio_indicators .indicator16 .grey-in::after{
+.review_box .ratio_indicators .indicator16 .grey-in::after{
     content: '';
     position: absolute;
     width: 20%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;
+}
+
+.review_box.fill .ratio_indicators .indicator15 .red-in::after,
+.review_box.fill .ratio_indicators .indicator16 .grey-in::after{
+    transform: scaleX(1)
 }
 
 .ratio_indicators .indicator16 .profit{
     left: 22%;
 }
 
-.ratio_indicators .indicator17 .red-in::after{
+.review_box .ratio_indicators .indicator17 .red-in::after{
     content: '';
     position: absolute;
     width: 70%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;
 }
 
 .ratio_indicators .indicator17 .profit{
     left: 72%;
 }
 
-.ratio_indicators .indicator18 .grey-in::after{
+.review_box .ratio_indicators .indicator18 .grey-in::after{
     content: '';
     position: absolute;
     width: 40%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;
+}
+
+.review_box.fill .ratio_indicators .indicator17 .red-in::after,
+.review_box.fill .ratio_indicators .indicator18 .grey-in::after{
+    transform: scaleX(1)
 }
 
 .ratio_indicators .indicator18 .profit{
     left: 42%;
 }
 
-.ratio_indicators .indicator19 .red-in::after{
+.review_box .ratio_indicators .indicator19 .red-in::after{
     content: '';
     position: absolute;
     width: 60%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;
 }
 
 .ratio_indicators .indicator19 .profit{
     left: 62%;
 }
 
-.ratio_indicators .indicator20 .grey-in::after{
+.review_box .ratio_indicators .indicator20 .grey-in::after{
     content: '';
     position: absolute;
     width: 70%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;
+}
+
+.review_box.fill .ratio_indicators .indicator19 .red-in::after,
+.review_box.fill .ratio_indicators .indicator20 .grey-in::after{
+    transform: scaleX(1)
 }
 
 .ratio_indicators .indicator20 .profit{
     left: 72%;
 }
 
-.ratio_indicators .indicator21 .red-in::after{
+.review_box .ratio_indicators .indicator21 .red-in::after{
     content: '';
     position: absolute;
     width: 70%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;
 }
 
 .ratio_indicators .indicator21 .profit{
     left: 72%;
 }
 
-.ratio_indicators .indicator22 .grey-in::after{
+.review_box .ratio_indicators .indicator22 .grey-in::after{
     content: '';
     position: absolute;
     width: 66%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;
+}
+
+.review_box.fill .ratio_indicators .indicator21 .red-in::after,
+.review_box.fill .ratio_indicators .indicator22 .grey-in::after{
+    transform: scaleX(1)
 }
 
 .ratio_indicators .indicator22 .profit{
     left: 68%;
 }
 
-.ratio_indicators .indicator23 .red-in::after{
+.review_box .ratio_indicators .indicator23 .red-in::after{
     content: '';
     position: absolute;
     width: 70%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;
 }
 
 .ratio_indicators .indicator23 .profit{
     left: 72%;
 }
 
-.ratio_indicators .indicator24 .grey-in::after{
+.review_box .ratio_indicators .indicator24 .grey-in::after{
     content: '';
     position: absolute;
     width: 66%;
     height: 25px;
     left: 0;
     top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 2s ease-in all;
+}
+
+.review_box.fill .ratio_indicators .indicator23 .red-in::after,
+.review_box.fill .ratio_indicators .indicator24 .grey-in::after{
+    transform: scaleX(1)
 }
 
 .ratio_indicators .indicator24 .profit{
