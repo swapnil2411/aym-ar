@@ -3126,6 +3126,12 @@ aside.show_sidebar{
     display: -webkit-flex;
     display: flex;
     margin-bottom: 20px;
+    transition: 0.35s ease all;
+}
+
+.initiative_box:hover{
+    background: ghostwhite;
+    padding: 10px;
 }
 
 .initiative_box .txt p{
@@ -3137,12 +3143,20 @@ aside.show_sidebar{
     text-align: justify;
 }
 
+.initiative_box:hover .txt p{
+    color: #d11c26;
+}
+
 .initiative_box .icon{
     padding-right: 10px;
 }
 
 .initiative_box .icon img{
     max-width: 50px;
+}
+
+.initiative_box:hover .icon img{
+    transform: scale(1.2);
 }
 
 .initiative_box .txt{
