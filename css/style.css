@@ -1777,16 +1777,21 @@ aside.show_sidebar{
 }
 
 .capabilities_area .capability_box:hover .capability_img{
-    box-shadow: 1px 1px 40px #e6e6e6;
+    box-shadow: 1px 1px 30px #8d8d8d;
 }
 
 .capabilities_area .capability_box .capability_img{
     position: relative;
+    overflow: hidden;
+}
+.capabilities_area .capability_box .capability_img:hover img{
+    transform: scale(1.2);
 }
 
 .capabilities_area .capability_box .capability_img img{
     display: block;
     height: 100%;
+    transition: 0.4s ease-in-out all;
 }
 
 .capabilities_area .capability_box .capability_img .know_more{

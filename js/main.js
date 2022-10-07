@@ -211,10 +211,12 @@ $(document).ready(function(){
 
     new WOW().init();
 
-    $('.count-up').counterUp({
-        delay: 5,
-        time: 1500
-    })
+    $('.count-up').countUp({
+      'time': 2000,
+    });
+
+  
+    //Navigation bullet on scroll and click
 
     const sections = document.querySelectorAll('section');
 
@@ -266,14 +268,15 @@ $(document).ready(function(){
         
         observer.observe(section)
       })
-
-    
-      
-
+  
+  
     $('.nav_bullet a').on('click', function(){
       $(this).addClass('active').siblings().removeClass('active');
     })
 
+
+
+    // graphs
     const ctx = document.getElementById('revenuechart');
     const myChart = new Chart(ctx, {
       type: 'bar',
