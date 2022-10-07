@@ -41,6 +41,17 @@
     .national_indicator_1 {
         top: 120px;
     }
+
+    .creating_value_table .light_grey_area{
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+
+    .creating_value_table .dark_grey_area,
+    .capital_area_2, .inputs_area_2{
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
 }
 
 @media (max-width: 991px){
@@ -498,6 +509,17 @@
         top: 100px;
         left: 3%;
     }
+
+    .creating_value_table .light_grey_area{
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+
+    .creating_value_table .dark_grey_area,
+    .capital_area_2, .inputs_area_2{
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
 }
 
 @media (max-width: 600px){
@@ -757,6 +779,17 @@
       .empowering_people_area .employee_engagement .empower_flex .empower_box .emp_img{
         height: 200px;
       }
+
+      .creating_value_table .light_grey_area{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .creating_value_table .dark_grey_area,
+    .capital_area_2, .inputs_area_2{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }
 
 @media (max-width: 480px){

@@ -2893,8 +2893,8 @@ aside.show_sidebar{
 }
 
 .creating_value_table .light_grey_area{
-    flex: 0 0 825px;
-    max-width: 825px;
+    flex: 0 0 40%;
+    max-width: 40%;
 }
 
 .creating_value_table_2{
@@ -2908,15 +2908,21 @@ aside.show_sidebar{
 }
 
 .creating_value_table .dark_grey_area{
-    flex: 0 0 275px;
-    max-width: 275px;
+    flex: 0 0 20%;
+    max-width: 20%;
 }
 
-.creating_value_table .light_grey_area .capital_area{
+.creating_value_table .light_grey_area .capital_area,
+.capital_area_2{
     background: #f1f1f2;
 }
 
-.creating_value_table .light_grey_area .inputs_area{
+.capital_area_2 .angle_icon{
+    display: none;
+}
+
+.creating_value_table .light_grey_area .inputs_area,
+.inputs_area_2{
     background: #e9e9ea;
 }
 
@@ -2932,15 +2938,21 @@ aside.show_sidebar{
 
 .creating_value_table .light_grey_area .capital_area,
 .creating_value_table .light_grey_area .inputs_area{
-    flex: 0 0 412.5px;
-    max-width: 412.5px;
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 
-.creating_value_table_2 .light_grey_area .capital_area,
+.capital_area_2,
+.inputs_area_2{
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+/* .creating_value_table_2 .light_grey_area .capital_area,
 .creating_value_table_2 .light_grey_area .inputs_area{
     flex: 0 0 550px;
     max-width: 550px;
-}
+} */
 
 .creating_value_table .heading{
     padding: 15px 15px 10px;
@@ -2991,8 +3003,9 @@ aside.show_sidebar{
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    flex-direction: column;
     padding: 15px;
-    height: 200px;
+    height: 400px;
     border-bottom: 1px solid #8d8d8d;
 }
 
@@ -3006,7 +3019,7 @@ aside.show_sidebar{
 
 .inputs_box{
     padding: 15px;
-    height: 200px;
+    height: 400px;
     border-bottom: 1px solid #8d8d8d;
 }
 
@@ -3026,7 +3039,7 @@ aside.show_sidebar{
 }
 
 .capital_box .capital_txt{
-    padding-left: 15px;
+    /* padding-left: 15px; */
 }
 
 .creating_value_table_2 .capital_box .capital_txt{
@@ -3051,9 +3064,9 @@ aside.show_sidebar{
     padding-left: 35px;
 }
 
-.inputs_area_2 .inputs_box:nth-child(6){
+/* .inputs_area_2 .inputs_box:nth-child(6){
     height: 300px;
-}
+} */
 
 .inputs_area_2 .inputs_box li{
     list-style: disc;
