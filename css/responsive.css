@@ -790,6 +790,15 @@
         flex: 0 0 50%;
         max-width: 50%;
     }
+
+    @keyframes move{
+        from{
+            margin-left: 0;
+        }
+        to{
+            margin-right: 0;
+        }
+    }
 }
 
 @media (max-width: 480px){

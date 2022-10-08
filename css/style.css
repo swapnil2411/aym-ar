@@ -2333,6 +2333,16 @@ aside.show_sidebar{
     max-width: 33.33%;
     height: 300px;
     text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .comp_num_inner_content{
@@ -2356,6 +2366,85 @@ aside.show_sidebar{
     margin: 0 auto;
     position: relative;
 }
+
+/* .grey-bg{
+    display: block;
+    height: 240px;
+    width: 240px;
+    background: #f1f1f2;
+    position: absolute;
+    border-radius: 100%;
+    z-index: -1;
+} */
+
+.bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 10px solid gray;       
+    border-bottom-color: white; 
+    /* border-right-color: white; */
+  }
+
+
+  .progress{
+    position: relative;
+    margin: 4px;
+    float:left;
+    text-align: center;
+    display: block;
+    height: 100%;
+    background: transparent
+  }
+
+  .progress h2{
+    font-size: 36px;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 100%;
+  }
+
+  .progress h3{
+    color: #d11c26;
+    font-size: 14px;
+  }
+
+  .progress h2 label:nth-child(2){
+    font-size: 20px;
+  }
+
+  .progress p{
+    display: none;
+  }
+  .barOverflow{ /* Wraps the rotating .bar */
+    position: relative;
+    overflow: hidden; /* Comment this line to understand the trick */
+    width: 240px;
+    height: 120px; /* Half circle (overflow) */
+    margin-bottom: -14px; /* bring the numbers up */
+  }
+  .bar{
+    position: absolute;
+    top: 0; left: 0;
+    width: 240px;
+    height: 240px; /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 10px solid #ccc;     /* half gray, */
+    border-bottom-color: #d11c26;  /* half azure */
+    border-right-color: #d11c26;
+    background: #f1f1f2;
+  }
+
+
 
 .comp_num_inner_content::after{
     content: '';
@@ -2607,6 +2696,20 @@ aside.show_sidebar{
     cursor: pointer;
 }
 
+.top_leadership_area .team_member_column .member_pic,
+.independent_leadership_area .team_member_column .member_pic{
+    height: 350px;
+    overflow: hidden;
+}
+
+.top_leadership_area .team_member_column .member_pic img,
+.independent_leadership_area .team_member_column .member_pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}   
+
 .top_leadership_area .team_member_column:hover .member_desription{
     transform: translateY(0%);
     visibility: visible;
@@ -2719,10 +2822,10 @@ aside.show_sidebar{
     /* letter-spacing: 1.5px; */
     /* font-weight: 600; */
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 10px;
     width: calc(100% - 20px);
-    height: calc(100% - 82px);
+    height: 100%;
     padding: 25px;
     text-align: justify;
     word-wrap: break-word;
@@ -3937,6 +4040,19 @@ aside.show_sidebar{
     text-align: center;
 }
 
+.arrow_sec img{
+    animation: move 1.5s ease-in-out infinite; 
+}
+
+@keyframes move{
+    from{
+        margin-left: -25px;
+    }
+    to{
+        margin-right: 10px;
+    }
+}
+
 /* Quarter Results */
 .quarter_results{
     padding: 70px 50px;
@@ -4396,6 +4512,51 @@ aside.show_sidebar{
     height: 350px;
     border-bottom: 1px solid #8d8d8d;
     padding: 0 10px;
+  }
+
+  .graph_area{
+    position: relative;
+  }
+
+ .graph_area .line{
+    width: 100%;
+    height: 1px;
+    background: #f1f1f2;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    z-index: -1;
+  }
+  .graph_area .line:nth-of-type(1){
+    bottom: 10%;
+  }
+  .graph_area .line:nth-of-type(2){
+    bottom: 20%;
+  }
+  .graph_area .line:nth-of-type(3){
+    bottom: 30%;
+  }
+  .graph_area .line:nth-of-type(4){
+    bottom: 40%;
+  }
+  .graph_area .line:nth-of-type(5){
+    bottom: 50%;
+  }
+  .graph_area .line:nth-of-type(6){
+    bottom: 60%;
+  }
+  .graph_area .line:nth-of-type(7){
+    bottom: 70%;
+  }
+  .graph_area .line:nth-of-type(8){
+    bottom: 80%;
+  }
+  .graph_area .line:nth-of-type(9){
+    bottom: 90%;
+  }
+  .graph_area .line:nth-of-type(10){
+    bottom: 100%;
   }
 
   .progress_bar_area .progress_bar_column{
