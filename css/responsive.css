@@ -534,13 +534,6 @@
         line-height: 35px;
     }
 
-
-    .logo_area{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
     .menu_toogle{
         margin-left: 0px;
     }

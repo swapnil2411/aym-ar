@@ -90,7 +90,11 @@ strong{
     align-items: center;
 }
 
-
+.logo_area{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 .logo_area img{
     max-width: 75px;
@@ -135,9 +139,7 @@ strong{
     margin-bottom: 5px;
 }
 
-.menu_toogle{
-    margin-left: 40px;
-}
+
 
 .menu_toogle .hamburger{
     display: -webkit-box;
