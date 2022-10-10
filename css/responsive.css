@@ -887,4 +887,12 @@
     .inputs_box,.capital_box{
         height: 480px;
     }
+
+    .revenue_quarter .progress_bar_area .progress_bar_column .fy{
+        font-size: 8px;
+    }
+
+    .revenue_quarter:nth-child(2) .quarter_graph .progress_bar_area .progress_bar_column:nth-child(1) .fy{
+        bottom: 82px;
+    }
 }
