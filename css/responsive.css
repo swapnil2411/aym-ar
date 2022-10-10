@@ -254,6 +254,10 @@
         padding: 50px 30px;
     }
 
+    .navbar_area{
+        padding: 15px 30px;
+    }
+
     .cover_page{
         flex-wrap: wrap;
         height: 100%;
@@ -500,14 +504,12 @@
       }
 
       .navbar_title{
-        left: unset;
-        right: 15px;
-        transform: translate(0, -50%);
+        right: 30px;
       }
 
       .cover_page .right_area{
         top: 100px;
-        left: 3%;
+        left: 30px;
     }
 
     .creating_value_table .light_grey_area{
@@ -520,12 +522,29 @@
         flex: 0 0 40%;
         max-width: 40%;
     }
+
+    .scaling_content .sec_title,
+    .scaling_content .sec_para{
+        width: 100%;
+    }
 }
 
 @media (max-width: 600px){
     .sec_title h2{
         line-height: 35px;
     }
+
+
+    .logo_area{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .menu_toogle{
+        margin-left: 0px;
+    }
+
     .vision_principle_area,
     .section-three,
     .section-four,
@@ -658,10 +677,6 @@
         margin-bottom: 25px;
     }
 
-    .navbar_title h2{
-        font-size: 18px;
-    }
-
     .initiative_box{
         flex: 0 0 100%;
         max-width: 100%;
@@ -781,14 +796,14 @@
       }
 
       .creating_value_table .light_grey_area{
-        flex: 0 0 100%;
-        max-width: 100%;
+        flex: 0 0 90%;
+        max-width: 90%;
     }
 
     .creating_value_table .dark_grey_area,
     .capital_area_2, .inputs_area_2{
-        flex: 0 0 50%;
-        max-width: 50%;
+        flex: 0 0 45%;
+        max-width: 45%;
     }
 
     @keyframes move{
@@ -799,6 +814,26 @@
             margin-right: 0;
         }
     }
+
+    .scaling_content .thread_collection .thread{
+        width: 45px;
+    }
+
+    .navbar_area{
+        padding: 15px 20px;
+    }
+
+    .navbar_title{
+        right: 0px;
+      }
+
+      .cover_page .right_area p{
+        color: #fff;
+      }
+
+      .cover_page .right_area {
+        left: 20px;
+    }
 }
 
 @media (max-width: 480px){
@@ -807,9 +842,6 @@
         max-width: 100%;
     }
 
-    .navbar_title h2{
-        font-size: 16px;
-    }
 
     #digital_capability .bg-img,
     #empowering_people .bg-img,
@@ -850,5 +882,9 @@
 
     #number_define_us .bg-img {
         bottom: -200px;
+    }
+
+    .inputs_box,.capital_box{
+        height: 480px;
     }
 }

@@ -4,23 +4,28 @@ $(document).ready(function(){
         connectedCallback() {
             this.innerHTML = `
             <header>
-      <div class="navbar_area">
-          <div class="right_area">
-            <div class="logo_area">
-              <a href="index.html">
-                  <img src="img/aym-logo.png" alt="logo" class="img-fluid">
-              </a>
-            </div>
-            <div class="menu_toogle">
-              <div class="hamburger">
-                  <iconify-icon icon="ci:menu-alt-02"></iconify-icon>
-                  <span>MENU</span>
-              </div>
+            <div class="navbar_area">
+            
+          
+          <div class="logo_area">
+          <a href="index.html">
+              <img src="img/aym-logo.png" alt="logo" class="img-fluid">
+          </a>
+        </div>
+        <div class="menu_toogle">
+            <div class="hamburger">
+                <iconify-icon icon="ci:menu-alt-02"></iconify-icon>
+                <span>MENU</span>
             </div>
           </div>
           <div class="left_area">
             <div class="navbar_title">
-              <h2>Annual Report 2021-22</h2>
+              <h2>
+                <span>2021</span>
+                <span>Annual</span>
+                <span>Report</span>
+                <span>2022</span>
+              </h2>
             </div>
           </div>
       </div>
