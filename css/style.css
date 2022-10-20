@@ -56,7 +56,9 @@ strong{
     display: block;
 }
 
-
+section{
+    height: 100vh;
+}
 
 /* Header Css */
 .navbar_area{
@@ -65,9 +67,9 @@ strong{
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    /* -webkit-justify-content: space-between;
+    -webkit-justify-content: space-between;
     -webkit-box-pack: justify;
-    justify-content: space-between; */
+    justify-content: space-between;
     -webkit-align-items: center;
     -webkit-box-align: center;
     align-items: center;
@@ -75,8 +77,11 @@ strong{
     border-bottom: 1px solid #f8f8f8;
     /* max-width: 1200px; */
     margin: 0 auto;
-    position: relative;
+    position: fixed;
+    width: 100%;
     height: 100px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, .8);
 }
 
 .navbar_area .right_area{
@@ -91,9 +96,9 @@ strong{
 }
 
 .logo_area{
-    position: absolute;
+    /* position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
 }
 
 .logo_area img{
@@ -361,7 +366,7 @@ aside.show_sidebar{
     -webkit-align-items: center;
     -webkit-box-align: center;
     align-items: center;
-    height: 700px;
+    height: 100%;
 }
 
 .cover_page .left_area,
@@ -372,7 +377,8 @@ aside.show_sidebar{
 }
 .cover_page .right_area{
     position: absolute;
-    top: 150px;
+    /* top: 150px; */
+    padding-top: 150px;
     left: 50px;
 }
 
@@ -606,7 +612,7 @@ aside.show_sidebar{
     -webkit-align-items: center;
     -webkit-box-align: center;
     align-items: center;
-    height: 550px;
+    height: 100%;
 }
 
 .mobile-btn{
@@ -649,7 +655,7 @@ aside.show_sidebar{
     display: -webkit-flex;
     display: flex;
     position: absolute;
-    left: -50px;
+    left: -10px;
     bottom: -10px;
     z-index: -1;
 }
@@ -1089,7 +1095,25 @@ aside.show_sidebar{
 
 .section-four{
     padding: 70px 50px;
-    background: #f8f8f8;
+    /* background: rgba(248, 248, 248, 0.4); */
+    overflow: hidden;
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.overview_bg{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -200px;
+    z-index: -1;
 }
 
 .section-four .right_area .title{
@@ -1133,7 +1157,7 @@ aside.show_sidebar{
     -webkit-align-items: center;
     -webkit-box-align: center;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-right: -15px;
     margin-left: -15px;
 }
@@ -1284,6 +1308,8 @@ aside.show_sidebar{
     background-repeat: no-repeat;
     background-attachment: fixed; */
     position: relative;
+    overflow: hidden;
+    /* background: rgba(248, 248, 248, 0.4); */
 }
 
 /* .section-five::after {
@@ -1321,12 +1347,12 @@ aside.show_sidebar{
 }
 
 .review_area .review_box{
-    flex: 0 0 31%;
-    max-width: 31%;
-    padding: 25px 15px 20px;
+    flex: 0 0 23%;
+    max-width: 23%;
+    padding: 15px;
     /* margin: 10px; */
-    margin-bottom: 35px;
-    background: #fff;
+    margin-bottom: 20px;
+    /* background: #fff; */
     /* border: 1px solid #d11c26; */
     /* box-shadow: 1px 1px 5px #e6e6e6;
     border-radius: 8px; */
@@ -1872,13 +1898,28 @@ aside.show_sidebar{
     color: #fff;
     position: relative;
     z-index: 1;
-    margin: 20px auto 0;
+    margin: 0 auto 0;
 
 }
 
 .section-six{
     padding: 70px 50px;
-    background: #f8f8f8;
+    /* background: #f8f8f8; */
+    background: url('../img/12-1.png');
+    background-size: cover;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    animation: breath 30s linear infinite;;
+}
+
+.section-six .inner_sec_six{
+    width: 100%;
 }
 
 .creating_value_area{
@@ -1933,6 +1974,10 @@ aside.show_sidebar{
     line-height: 23px;
 }
 
+.creating_value_area .creating_box .creating_content p:nth-child(2){
+    font-weight: 600;
+}
+
 .creating_value_area .creating_box .creating_content::before{
     top: -30px;
     left: 50%;
@@ -1965,7 +2010,7 @@ aside.show_sidebar{
     padding: 70px 50px;
     position: relative;
     overflow: hidden;
-    background: #f8f8f8;
+    /* background: #f8f8f8; */
     /* background-image: url('../img/dot-element-opacity.png');
     background-size: contain;
     background-position: bottom;
@@ -1981,9 +2026,9 @@ aside.show_sidebar{
     -webkit-justify-content: space-between;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    -webkit-align-items: center;
+    /* -webkit-align-items: center;
     -webkit-box-align: center;
-    align-items: center;
+    align-items: center; */
     padding-top: 30px;
 }
 
@@ -2004,14 +2049,25 @@ aside.show_sidebar{
     animation-delay: 1.5s;
 }
 
-.capabilities_area .capability_box:hover .capability_img{
-    box-shadow: 1px 1px 30px #8d8d8d;
+.capabilities_area .capability_box:hover .capability_content{
+    box-shadow: 1px 1px 30px #e6e6e6;
 }
 
 .capabilities_area .capability_box .capability_img{
     position: relative;
     overflow: hidden;
+    height: 250px;
 }
+
+.capabilities_area .capability_box .capability_content{
+    background: #fff;
+}
+
+.capabilities_area .capability_box .capability_content .sec_para{
+    padding: 20px 15px;
+    height: 150px;
+}
+
 .capabilities_area .capability_box .capability_img:hover img{
     transform: scale(1.2);
 }
@@ -2019,6 +2075,8 @@ aside.show_sidebar{
 .capabilities_area .capability_box .capability_img img{
     display: block;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
     transition: 0.4s ease-in-out all;
 }
 
@@ -2057,8 +2115,10 @@ aside.show_sidebar{
     -webkit-align-items: center;
     -webkit-box-align: center;
     align-items: center;
-    height: 550px;
     overflow: hidden;
+    background: url('../img/future_ready_bg.png');
+    background-size: contain;
+    background-position: unset;
 }
 
 .section-eight .left_area{
@@ -2070,7 +2130,7 @@ aside.show_sidebar{
 .section-eight .right_area{
     flex: 0 0 40%;
     max-width: 40%;
-    background: url('../img/00.jpg');
+    /* background: url('../img/00.jpg'); */
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -2085,10 +2145,12 @@ aside.show_sidebar{
     -webkit-align-items: center;
     -webkit-box-align: center;
     align-items: center;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
 }
 
 .section-eight .right_area .future_ready_btns{
-    background: #fff;
+    background: #d11c26;
     padding: 50px 25px 40px;
     position: relative;
 }
@@ -2099,7 +2161,7 @@ aside.show_sidebar{
     position: absolute;
     width: 1px;
     height: 100%;
-    background: #fff;
+    background: #000;
     display: block;
     top: -100%;
 }
@@ -2135,9 +2197,9 @@ aside.show_sidebar{
 .section-eight .right_area a{
     display: block;
     padding: 15px 15px;
-    background: #d11c26;
+    background: #fff;
     margin-bottom: 15px;
-    color: #fff;
+    color: #d11c26;
     text-decoration: none;
     /* font-weight: 700; */
     position: relative;
@@ -2150,6 +2212,14 @@ aside.show_sidebar{
     background-size: cover;
     background-position: center;
     position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
 }
 
 .section-nine::after{
@@ -2257,6 +2327,21 @@ aside.show_sidebar{
     /* font-weight: 700; */
     text-align: center;
     padding: 15px;
+}
+
+
+.section-ten{
+    padding: 70px 50px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.corevalue_img{
+    position: absolute;
+    left: 0;
+    bottom: -400px;
+    z-index: -1;
 }
 
 /* Scaling New Height */
@@ -6288,4 +6373,11 @@ aside.show_sidebar{
 
   .mobile-btn:hover::before{
     transform: scaleX(1);
+}
+
+
+@keyframes breath {
+    0%   { background-size: 100% auto; }
+  50% { background-size: 120% auto; }
+  100% { background-size: 100% auto; }
 }
