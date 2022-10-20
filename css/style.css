@@ -56,7 +56,16 @@ strong{
     display: block;
 }
 
-section{
+.section-one,
+.section-two,
+.section-three,
+.section-four,
+.section-five,
+.section-six,
+.section-seven,
+.section-eight,
+.section-nine,
+.section-ten{
     height: 100vh;
 }
 
@@ -2349,7 +2358,7 @@ aside.show_sidebar{
 
 /* Scaling New Height */
 .scaling_new_height_section{
-    padding: 70px 50px;
+    padding: 110px 50px 70px;
     max-width: 1200px;
     margin: auto;
 
@@ -2434,7 +2443,7 @@ aside.show_sidebar{
 
 /* Number Define Us */
 .number_define_section{
-    padding: 70px 50px 150px;
+    padding: 110px 50px 150px;
     max-width: 1200px;
     margin: auto;
 }
@@ -2660,7 +2669,7 @@ aside.show_sidebar{
 
 /* MD message */
 .md_message_section{
-    padding: 70px 50px;
+    padding: 110px 50px 70px;
     max-width: 1200px;
     margin: auto;
     position: relative;
@@ -3052,7 +3061,7 @@ aside.show_sidebar{
 
 /* Vision & Principles */
 .vision_principle_area{
-    padding: 70px 50px 150px;
+    padding: 110px 50px 150px;
     max-width: 1200px;
     margin: auto;
     position: relative;
@@ -3155,7 +3164,7 @@ aside.show_sidebar{
 
 /* Creating Value For Everyone */
 .creating_value_every_area{
-    padding: 70px 50px;
+    padding: 110px 50px 70px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -3394,7 +3403,7 @@ aside.show_sidebar{
 
 /* Digital Capability */
 .digital_capability_area{
-    padding: 70px 50px;
+    padding: 110px 50px 70px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -3486,7 +3495,7 @@ aside.show_sidebar{
 }
 
 .empowering_people_area{
-    padding: 70px 50px;
+    padding: 110px 50px 70px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -3669,7 +3678,7 @@ aside.show_sidebar{
 }
 
 .our_community_area{
-    padding: 70px 50px;
+    padding: 110px 50px 70px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -3796,7 +3805,7 @@ aside.show_sidebar{
 }
 
 .capital_commitment_area{
-    padding: 70px 50px;
+    padding: 110px 50px 70px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -3878,7 +3887,7 @@ aside.show_sidebar{
 }
 
 .netzero_commitment_area{
-    padding: 70px 50px;
+    padding: 110px 50px 70px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -3948,7 +3957,7 @@ aside.show_sidebar{
 }
 
 .strategic_goals_area{
-    padding: 70px 50px;
+    padding: 110px 50px 70px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -3999,8 +4008,9 @@ aside.show_sidebar{
     width: 100%;
     z-index: -1;
 }
+
 .innovative_propuct_area{
-    padding: 70px 50px;
+    padding: 110px 50px 70px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -4026,7 +4036,7 @@ aside.show_sidebar{
 
 /* Our Presence */
 .ourpresence_area{
-    padding: 70px 50px;
+    padding: 110px 50px 70px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -4241,7 +4251,7 @@ aside.show_sidebar{
 
 /* Quarter Results */
 .quarter_results{
-    padding: 70px 50px;
+    padding: 110px 50px 70px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -4674,7 +4684,7 @@ aside.show_sidebar{
 
 /* Path Css */
 .path_area{
-    padding: 70px 50px;
+    padding: 110px 50px 70px;
     max-width: 1200px;
     margin: 0 auto;
 }
