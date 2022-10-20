@@ -1900,7 +1900,7 @@ aside.show_sidebar{
     z-index: 1;
     margin: 0 auto 0;
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
 }
