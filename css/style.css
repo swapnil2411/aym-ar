@@ -888,7 +888,7 @@ aside.show_sidebar{
 }
 
 .section-three{
-    padding: 70px 50px;
+    padding: 120px 50px 70px;
     background-image: url('../img/row-bgimage-1.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -1302,7 +1302,7 @@ aside.show_sidebar{
 }
 
 .section-five{
-    padding: 70px 50px;
+    padding: 120px 50px 70px;
     /* background-image: url('../img/threading-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -2007,7 +2007,7 @@ aside.show_sidebar{
 }
 
 .section-seven{
-    padding: 70px 50px;
+    padding: 120px 50px 70px;
     position: relative;
     overflow: hidden;
     /* background: #f8f8f8; */
@@ -2117,7 +2117,7 @@ aside.show_sidebar{
     align-items: center;
     overflow: hidden;
     background: url('../img/future_ready_bg.png');
-    background-size: contain;
+    background-size: cover;
     background-position: unset;
 }
 
@@ -2331,7 +2331,7 @@ aside.show_sidebar{
 
 
 .section-ten{
-    padding: 70px 50px;
+    padding: 120px 50px 70px;
     position: relative;
     overflow: hidden;
 
