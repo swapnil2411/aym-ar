@@ -79,7 +79,7 @@ section{
     margin: 0 auto;
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 80px;
     z-index: 10;
     background-color: rgba(255, 255, 255, .8);
 }
@@ -102,7 +102,7 @@ section{
 }
 
 .logo_area img{
-    max-width: 75px;
+    max-width: 65px;
 }
 
 .navbar_title{
@@ -888,7 +888,7 @@ aside.show_sidebar{
 }
 
 .section-three{
-    padding: 120px 50px 70px;
+    padding: 90px 50px 70px;
     background-image: url('../img/row-bgimage-1.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -1302,7 +1302,7 @@ aside.show_sidebar{
 }
 
 .section-five{
-    padding: 120px 50px 70px;
+    padding: 90px 50px 70px;
     /* background-image: url('../img/threading-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -1351,7 +1351,7 @@ aside.show_sidebar{
     max-width: 23%;
     padding: 15px;
     /* margin: 10px; */
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     /* background: #fff; */
     /* border: 1px solid #d11c26; */
     /* box-shadow: 1px 1px 5px #e6e6e6;
@@ -1900,7 +1900,7 @@ aside.show_sidebar{
     z-index: 1;
     margin: 0 auto 0;
     position: absolute;
-    bottom: 5px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -2010,7 +2010,7 @@ aside.show_sidebar{
 }
 
 .section-seven{
-    padding: 120px 50px 70px;
+    padding: 90px 50px 70px;
     position: relative;
     overflow: hidden;
     /* background: #f8f8f8; */
