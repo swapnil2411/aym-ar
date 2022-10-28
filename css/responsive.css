@@ -54,7 +54,14 @@
         max-width: 30%;
     }
 
-    section{
+.section-two,
+.section-three,
+.section-four,
+.section-five,
+.section-six,
+.section-seven,
+.section-nine,
+.section-ten{
         height: unset;
     }
 
@@ -854,9 +861,7 @@
         right: 0px;
       }
 
-      .cover_page .right_area p{
-        color: #fff;
-      }
+      
 
       .cover_page .right_area {
         left: 20px;
